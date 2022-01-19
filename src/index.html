@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Geocoding API to display address details</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div class="container p-5">
+            <h3 class="card-title">Display address details using Google Geocoding API</h3>
+            <form id="address-form">
+              <div class="form-group m-3">
+                <label class="form-label">Enter location details here</label>
+                <input type="text" id="address" class="form-control"/>
+              </div>
+              <button type="submit" class="btn btn-primary m-3">Submit</button>
+            </form>
+            <div class="m-3">
+                <div id="formatted-address"></div>
+            </div>
+            <div class="m-3">
+                <div id="address-components"></div>
+            </div>
+            <div class="m-3">
+                <div id="geometry"></div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
